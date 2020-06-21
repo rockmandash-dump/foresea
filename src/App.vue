@@ -1,28 +1,35 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <KV />
+    <Whale />
+    <Ocean />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import KV from "./components/KV";
+import Whale from "./components/Whale";
+import Ocean from "./components/Ocean";
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    KV,
+    Whale,
+    Ocean,
+  },
+};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  background-color: #0a233f;
+  overflow-x: hidden;
+  height: 3000px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
 }
 </style>
